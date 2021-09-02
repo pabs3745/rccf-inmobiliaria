@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RCCF Bienes raíces - Contacto</title>
+        <title>RCCF Negocios inmobiliarios</title>
         <link rel="stylesheet" href="/build/css/app.css">
     </head>
     <body>
@@ -18,28 +18,87 @@
                     <nav class="navegacion">
                         <a href="Ventas.html">Ventas</a>
                         <a href="Alquileres.html">Alquileres</a>
+                        <a href="emprendimientos.html">Emprendimientos</a>
                         <a href="Contacto.html">Contacto</a>
-                        <a href="Noticias.html">Noticias</a>
+                        <a href="rccf.html">Información</a>
                     </nav>
                     
                 </div> <!-- .barra-->
-                
+                <h1>RCCF Negocios inmobiliarios. Venta y alquileres</h1>
             </div>
 
         </header>
 
         <main class="contenedor seccion">
             <h1>Contacto</h1>
+
+            <picture>
+                <source srcset="build/img/destacada3.webp" type="image/webp">
+                <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+                <img loading="lazy" src="build/img/destacada3.jpg" alt="imagen de contacto">
+            </picture>
+
+            <h2>Rellene el formulario de contacto</h2>
+            <form action="" class="formulario">
+                <fieldset>
+                    <legend>Consulta</legend>
+                    <label for="opciones">Selecciona una opción</label>
+                    <select name="" id="opciones">
+                        <option value="" disabled selected>-- Seleccione una opción --</option>
+                        <option value="Compra">Compra</option>
+                        <option value="Venta">Venta</option>
+                        <option value="Tasación">Tasación</option>
+                        <option value="Alquiler">Alquiler</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información de contacto</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre">
+                    <label for="email">email</label>
+                    <input type="email" id="email" placeholder="Tu email">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="Tu número de teléfono">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Tu mensaje:"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contacto</legend>
+                    <p>Cómo deseas ser contactado</p>
+                    <div class="forma-contacto">
+                        <label for="contactar-telefono">Teléfono</label>
+                        <input name="contacto" type="radio" value="telefono" id="contactar-telefono">
+                        <label for="contactar-whatsap">WhatsApp</label>
+                        <input name="contacto" type="radio" value="whatsap" id="contactar-whatsap">
+                        <label for="contactar-email">email</label>
+                        <input name="contacto" type="radio" value="email" id="contactar-email">
+                    </div>
+
+                    <p>Si quieres ser contactado por teléfono o WhatsApp, elige el día y la hora para recibir nuestra llamada:</p>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" min="09:00" max="20:00">
+                </fieldset>
+                
+                <input type="submit" value="Enviar" class="boton-verde">
+            </form>
+
+
         </main>
         
 
         <footer class="footer seccion">
             <div class="contenedor contenedor-footer">
                 <nav class="navegacion">
-                    <a href="ventas.html">Ventas</a>
-                    <a href="alquileres.html">Alquileres</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="noticias.html">Noticias</a>
+                    <a href="Ventas.html">Ventas</a>
+                    <a href="Alquileres.html">Alquileres</a>
+                    <a href="emprendimientos.html">Emprendimientos</a>
+                    <a href="Contacto.html">Contacto</a>
+                    <a href="rccf.html">Información</a>
                 </nav>
             </div>
             <p class="copyright">Todos los derechos reservados 2021 &copy</p>
